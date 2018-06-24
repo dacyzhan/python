@@ -8,7 +8,18 @@
 
 # 测试函数
 def test():
-    print('test')
+    print('hello , world ')
+# Python允许用'''...'''的格式表示多行内容
+    print('''
+    lin1
+    lin2
+    lin3''')
+
+    print("""
+    a
+    b
+    c
+    """)
 
 def testString():
     # \' 表示 ' ,斜杠为转义符
@@ -21,10 +32,7 @@ def testString():
 # Python允许用r''表示''内部的字符串默认不转义
     print(r'\\')
 
-# Python允许用'''...'''的格式表示多行内容
-    print('''lin1
-    lin2
-    lin3''')
+
 # 布尔值可以用and、or和not运算。
     print( True and False)
     print( True and True)
@@ -40,8 +48,6 @@ def testString():
     print('a:'+str(a))
     a='ABC'
     print('a:'+a)
-
-
     a = 'ABC'
     b = a
     a = 'XYZ'
@@ -52,4 +58,5 @@ def testString():
 
 # main 函数
 if __name__=='__main__':
+    test()
     testString()

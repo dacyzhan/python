@@ -39,20 +39,22 @@ def move(x, y, step, angle=0):
 
 def power(x):
     return x*x
-def powers(x,n):
+def powers(x,n=2):  # 注意 n= 2 是默认参数 n=2 ,当调用 该方法时只输入了一个参数，则相当于 n 取默认值
     s=1
-    if x<>0 & n>0:
+    if x!=0 & n>0:  # 注意 不等于 Python 3.x 中 语法结构为 !=   ,2.x 语法结构为 <>
+        print('进来了')
         while n>0:
+            print('我也进来了')
             s=s*x
             n=n-1
         print('000')
         return s
-    elif x==0:
-        print('111')
-        return 0
-    elif n==0:
-        print('222')
-        return 1
+    # elif x==0:
+    #     print('111')
+    #     return 0
+    # elif n==0:
+    #     print('222')
+    #     return 1
     else:return '数据异常'
 
 if __name__=='__main__':
@@ -60,5 +62,6 @@ if __name__=='__main__':
 
     x,y= move(100,100,60,math.pi/6)
     print(x,y)
-    print power(4)
+    print (power(4))
     print(powers(3,3))
+    print(powers(3))
